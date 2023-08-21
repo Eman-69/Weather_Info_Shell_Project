@@ -14,7 +14,7 @@ jobs:
       - name: fcaccuracy
         run: ./fc_accuracy.sh
       - name: rxpoc
-        run: ./rxpoc.sh
+        run: ./rx_poc.sh
 
         
       
