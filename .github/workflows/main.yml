@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: fcaccuracy
-        run: ./fc_accuracy.sh
-      - name: rxpoc
+      - name: retrieve Obs temp and forecast temp
         run: ./rx_poc.sh
+      - name: Find accuracy and add to table
+        run: ./fc_accuracy.sh
 
         
       
