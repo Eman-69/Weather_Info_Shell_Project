@@ -1,6 +1,7 @@
 yes_fc=$(tail -2 rx_poc.log | head -1 | cut -d " " -f5)
 today_fc=$(tail -1 rx_poc.log | cut -d  " " -f5)
-accuracy=$(($yes_fc-$today_fc))
+
+accuracy=$((yes_fc-today_fc))
 echo $accuracy
 if [ -1 -le $accuracy ] && [ $accuracy -le 1  ]
 then
